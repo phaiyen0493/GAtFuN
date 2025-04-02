@@ -6,7 +6,9 @@ This repository contains the PyTorch implementation for diffusion-based GAtFUN.
 
 ## Comparison with SOTA methods on In-the-Wild videos
 
-Check out our Demo video: https://github.com/user-attachments/assets/563bcd70-4530-40bd-851d-328ca5596dd9
+Check out our Demo video: 
+
+https://github.com/user-attachments/assets/563bcd70-4530-40bd-851d-328ca5596dd9
 
 
 ## Dependencies
