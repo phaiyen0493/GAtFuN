@@ -114,7 +114,7 @@ python main_humaneva.py -k gt -c 'checkpoint/humaneva_gt' -a 'Walk,Jog' -gpu 0 -
 
 Put a `random.mp4` video in the  `./Inference` directory. Download epoch_101.bin in the Google Drive and put it in `/Inference/pretrained_models/`. Run `Inference.ipynb` . You will get an ouput like this:
 
-https://github.com/user-attachments/assets/af656689-1c29-4104-8254-14e340432788
+https://github.com/user-attachments/assets/7470d5b6-bcdf-40bc-8fbf-e88c27bcbdd5
 
 ### Pretrained Models
 [Google Drive](https://drive.google.com/drive/folders/1iEc6o7KlUfYpOYCN5Eo_rN0phLHnJrP1?usp=sharing)
