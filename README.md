@@ -1,6 +1,6 @@
-# GAtFUN
+# GAtFuN
 
-This repository contains the PyTorch implementation for diffusion-based GAtFUN.
+This repository contains the PyTorch implementation for diffusion-based GAtFuN.
 
 ![GAtFuN](https://github.com/user-attachments/assets/1b1dab3f-7ec8-4f54-a3bb-edd036ee2f5c)
 
@@ -71,18 +71,18 @@ To train our model using the 2D keypoints obtained by CPN as inputs, please run:
 python main_h36m.py -k cpn_ft_h36m_dbb -c checkpoint/h36m -gpu 0 --nolog
 ```
 
-To evaluate our GAtFUN using the 2D keypoints obtained by CPN as inputs, please run:
+To evaluate our GAtFuN using the 2D keypoints obtained by CPN as inputs, please run:
 ```bash
 python main_h36m.py -k cpn_ft_h36m_dbb -c checkpoint/h36m -gpu 0 --nolog --evaluate <checkpoint_file> -num_proposals 20 -sampling_timesteps 10 --p2
 ```
 
 #### 2D ground truth inputs
-To train our GAtFUN model using the 2D ground truth keypoints as inputs, please run:
+To train our GAtFuN model using the 2D ground truth keypoints as inputs, please run:
 ```bash
 python main_h36m.py -k gt -c checkpoint/h36m_gt -gpu 0 --nolog --save_lmin 21 --save_lmax 23
 ```
 
-To evaluate our GAtFUN using the 2D ground truth keypoints as inputs, please run:
+To evaluate our GAtFuN using the 2D ground truth keypoints as inputs, please run:
 ```bash
 python main_h36m.py -k gt -c checkpoint/h36m_gt -gpu 0 --nolog --evaluate <checkpoint_file> -num_proposals 20 -sampling_timesteps 10 --p2
 ```
@@ -93,7 +93,7 @@ To train our model using the ground truth 2D poses as inputs, please run:
 python main_3dhp.py -c checkpoint/3dhp -gpu 0 --nolog
 ```
 
-To evaluate our GAtFUN using the ground truth 2D poses as inputs, please run:
+To evaluate our GAtFuN using the ground truth 2D poses as inputs, please run:
 ```bash
 python main_3dhp.py -c checkpoint/3dhp -gpu 0 --nolog --evaluate <checkpoint_file> -num_proposals 20 -sampling_timesteps 10
 ```
@@ -105,7 +105,7 @@ To train our model using the ground truth 2D poses as inputs, please run:
 python main_humaneva.py -k gt -c 'checkpoint/humaneva_gt' -a 'Walk,Jog' -gpu 0 --nolog
 ```
 
-To evaluate our GAtFUN using the ground truth 2D poses as inputs, please run:
+To evaluate our GAtFuN using the ground truth 2D poses as inputs, please run:
 ```bash
 python main_humaneva.py -k gt -c 'checkpoint/humaneva_gt' -a 'Walk,Jog' -gpu 0 --nolog --evaluate <checkpoint_file> --by-subject -num_proposals 20 -sampling_timesteps 10 --p2
 ```
