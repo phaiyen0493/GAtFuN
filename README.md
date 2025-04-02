@@ -2,11 +2,11 @@
 
 This repository contains the PyTorch implementation for diffusion-based GAtFUN.
 
-![GAtFUN]()
+![GAtFuN](https://github.com/user-attachments/assets/b7797947-9ace-4944-9970-ec3dc26bf1fb)
 
 ## Comparison with SOTA methods on In-the-Wild videos
 
-Check out our Demo video:
+Check out our Demo video: https://github.com/user-attachments/assets/563bcd70-4530-40bd-851d-328ca5596dd9
 
 
 ## Dependencies
@@ -18,9 +18,14 @@ Make sure you have the following dependencies installed (python):
 * timm
 * tensorboard
 * CLIP
+* Detectron2
 
 ```bash
 pip install git+https://github.com/openai/CLIP.git
+```
+```
+python -m pip install detectron2 -f \
+  https://dl.fbaipublicfiles.com/detectron2/wheels/cu113/torch1.10/index.html
 ```
 
 You should download [MATLAB](https://www.mathworks.com/products/matlab-online.html) if you want to evaluate our model on MPI-INF-3DHP dataset.
@@ -107,11 +112,9 @@ To evaluate our GAtFUN using the ground truth 2D poses as inputs, please run:
 python main_humaneva.py -k gt -c 'checkpoint/humaneva_gt' -a 'Walk,Jog' -gpu 0 --nolog --evaluate <checkpoint_file> --by-subject -num_proposals 20 -sampling_timesteps 10 --p2
 ```
 
-### In-the-wild videos
-To extract 2D keypoints using off-the-shelf Detectron2 detector, please refer to `Detectron2_2D_Detection.ipynb` in `synthetic_occlusion/` folder to create a custom test dataset yourself. You will need to extract video to frames before extracting 2D keypoints. 
+### In-the-wild Inference
 
-Put your custom dataset in `./data` directory.
-For best visualization (as shown in the Demo video), please run our pretrained model `Human3.6M/temporal_alpha_025_temp_beta_5/epoch_101.bin` on Google Drive. 
+
 
 ### Pretrained Models
 [Google Drive](https://drive.google.com/drive/folders/1iEc6o7KlUfYpOYCN5Eo_rN0phLHnJrP1?usp=sharing)
