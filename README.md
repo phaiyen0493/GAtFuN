@@ -50,15 +50,6 @@ We set up the MPI-INF-3DHP dataset following [P-STMO](https://github.com/paTRICK
 
 Put them in the `./data` directory. 
 
-### HumanEva-I
-We set up the HumanEva-I dataset similar to [VideoPose3D](https://github.com/facebookresearch/VideoPose3D/blob/master/DATASETS.md). You can download the processed data from here:
-
-[`data_2d_humaneva15_gt.npz`](https://drive.google.com/file/d/1kNoTuypL-jGRcdGqyBYRIB3iWfIeiQmh/view?usp=sharing) is the ground truth of 2D keypoints. 
-
-[`data_3d_humaneva15.npz`](https://drive.google.com/file/d/1BtuijI1aYeXFZIgFI7je0PD8G7xP2-nt/view?usp=sharing) is the ground truth of 3D human joints. 
-
-Put them in the `./data` directory.
-
 ## Training and Evaluation
 
 We trained our models on 1*NVIDIA RTX 4090.
