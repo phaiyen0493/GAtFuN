@@ -1,4 +1,4 @@
-# GAtFuN
+# GAtFuN (WACV 2026, Oral)
 
 This repository contains the PyTorch implementation for diffusion-based GAtFuN.
 
@@ -99,21 +99,6 @@ python main_3dhp.py -c checkpoint/3dhp -gpu 0 --nolog --evaluate <checkpoint_fil
 ```
 After that, the predicted 3D poses under P-Best, P-Agg, J-Best, J-Agg settings are saved as four files (`.mat`) in `./checkpoint`. To get the MPJPE, AUC, PCK metrics, you can evaluate the predictions by running a Matlab script `./3dhp_test/test_util/mpii_test_predictions_ori_py.m` (you can change 'aggregation_mode' in line 29 to get results under different settings). Then, the evaluation results are saved in `./3dhp_test/test_util/mpii_3dhp_evaluation_sequencewise_ori_{setting name}_t{iteration index}.csv`. You can manually average the three metrics in these files over six sequences to get the final results.
 
-### HumanEva-I
-To train our model using the ground truth 2D poses as inputs, please run:
-```bash
-python main_humaneva.py -k gt -c 'checkpoint/humaneva_gt' -a 'Walk,Jog' -gpu 0 --nolog
-```
-
-To evaluate our GAtFuN using the ground truth 2D poses as inputs, please run:
-```bash
-python main_humaneva.py -k gt -c 'checkpoint/humaneva_gt' -a 'Walk,Jog' -gpu 0 --nolog --evaluate <checkpoint_file> --by-subject -num_proposals 20 -sampling_timesteps 10 --p2
-```
-
-### In-the-wild Inference
-
-Put a `random.mp4` video in the  `./Inference` directory. Download epoch_101.bin in the Google Drive and put it in `/Inference/pretrained_models/`. Run `Inference.ipynb`.
-
 ### Pretrained Models
 [Google Drive](https://drive.google.com/drive/folders/1iEc6o7KlUfYpOYCN5Eo_rN0phLHnJrP1?usp=sharing)
 
@@ -128,5 +113,18 @@ Our code refers to the following repositories.
 * [MotionBERT](https://github.com/Walter0807/MotionBERT)
 
 We thank the authors for releasing their codes.
+
+## Cite
+If you think our github is helpful, please cite:
+```bash
+@InProceedings{Pham_2026_WACV,
+    author    = {Pham, Yen and Yuan, Xiaohui and Zhuang, Chengyuan},
+    title     = {Motion-Aware Graph Fusion Network for 3D Human Pose Estimation},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {March},
+    year      = {2026},
+    pages     = {5798-5808}
+}
+```
 
 
