@@ -31,7 +31,7 @@ You should download [MATLAB](https://www.mathworks.com/products/matlab-online.ht
 ## Datasets
 
 ### Human3.6M
-We set up the Human3.6M(http://vision.imar.ro/human3.6m) dataset in the same way as [VideoPose3D](https://github.com/facebookresearch/VideoPose3D/blob/master/DATASETS.md).  You can download the processed data from here: 
+We set up the [Human3.6M](http://vision.imar.ro/human3.6m) dataset in the same way as [VideoPose3D](https://github.com/facebookresearch/VideoPose3D/blob/master/DATASETS.md).  You can download the processed data from here: 
 
 [`data_2d_h36m_cpn_ft_h36m_dbb.npz`](https://drive.google.com/file/d/1ina9zTS1ZnT2sjdFYr9GTnljWYdTM82S/view?usp=sharing) is the 2D keypoints detected by [CPN](https://github.com/GengDavid/pytorch-cpn).  
 
@@ -42,7 +42,7 @@ We set up the Human3.6M(http://vision.imar.ro/human3.6m) dataset in the same way
 Put them in the `./data` directory.
 
 ### MPI-INF-3DHP
-We set up the MPI-INF-3DHP(https://vcai.mpi-inf.mpg.de/3dhp-dataset/) dataset following [P-STMO](https://github.com/paTRICK-swk/P-STMO) and [D3DP](https://github.com/paTRICK-swk/D3DP/tree/main). You can download the processed data from here:
+We set up the [MPI-INF-3DHP](https://vcai.mpi-inf.mpg.de/3dhp-dataset/) dataset following [P-STMO](https://github.com/paTRICK-swk/P-STMO) and [D3DP](https://github.com/paTRICK-swk/D3DP/tree/main). You can download the processed data from here:
 
 [`data_ori_3dhp.rar`](https://drive.google.com/file/d/18ZC4bD0-esmx-JQoz4Gcu5ytwJDE1U8c/view?usp=sharing) includes both ground truth 2D and 3D poses (officially called "annot3").
 
