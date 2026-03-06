@@ -115,7 +115,7 @@ Our code refers to the following repositories.
 We thank the authors for releasing their codes.
 
 ## Cite
-If you think our github is helpful, please cite:
+If our github is helpful, please cite:
 ```bash
 @InProceedings{Pham_2026_WACV,
     author    = {Pham, Yen and Yuan, Xiaohui and Zhuang, Chengyuan},
